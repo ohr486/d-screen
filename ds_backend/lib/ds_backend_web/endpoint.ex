@@ -7,7 +7,7 @@ defmodule DsBackendWeb.Endpoint do
   @session_options [
     store: :cookie,
     key: "_ds_backend_key",
-    signing_salt: "1VUrpl4N"
+    signing_salt: "fySRzrYj"
   ]
 
   socket "/socket", DsBackendWeb.UserSocket,
@@ -32,7 +32,6 @@ defmodule DsBackendWeb.Endpoint do
     socket "/phoenix/live_reload/socket", Phoenix.LiveReloader.Socket
     plug Phoenix.LiveReloader
     plug Phoenix.CodeReloader
-    plug Phoenix.Ecto.CheckRepoStatus, otp_app: :ds_backend
   end
 
   plug Phoenix.LiveDashboard.RequestLogger,

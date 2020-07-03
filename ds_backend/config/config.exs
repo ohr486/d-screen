@@ -7,16 +7,13 @@
 # General application configuration
 use Mix.Config
 
-config :ds_backend,
-  ecto_repos: [DsBackend.Repo]
-
 # Configures the endpoint
 config :ds_backend, DsBackendWeb.Endpoint,
   url: [host: "localhost"],
-  secret_key_base: "5EzoiYyzI7h5xhhGqLSPFa6k5HJTByeG/Hi8zQrDRNOdprToyVv3mfyD1OxTxV2u",
+  secret_key_base: "mgKvHw2+Kxdyq5VymOozLya2o1sg7taX0+ywK11rgGbyuV0c4fMbjogswfpvZHfg",
   render_errors: [view: DsBackendWeb.ErrorView, accepts: ~w(html json), layout: false],
   pubsub_server: DsBackend.PubSub,
-  live_view: [signing_salt: "B312Og7l"]
+  live_view: [signing_salt: "ywpZcrKM"]
 
 # Configures Elixir's Logger
 config :logger, :console,
