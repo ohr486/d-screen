@@ -1,2 +1,5 @@
 # for IDE
 .idea
+
+# for Mac
+.DS_Store
