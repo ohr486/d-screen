@@ -1,5 +1,6 @@
 # for IDE
 .idea
+.vscode
 
 # for Mac
 .DS_Store
